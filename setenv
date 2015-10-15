@@ -1,1 +1,10 @@
 alias bb="./build.sh"
+if [ -f Alchemy-out/linux-native-x64/final/native-wrapper.sh ];
+then
+	. Alchemy-out/linux-native-x64/final/native-wrapper.sh
+fi
+if [ -f packages/firmwared/utils/fdc.complete ];
+then
+	. packages/firmwared/utils/fdc.complete
+fi
+
